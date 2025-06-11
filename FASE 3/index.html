@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho Quarta</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <h1>Perfil</h1>
+  </header>
+  <main>
+
+    <section class="carrossel">
+      <button class="seta seta-esquerda" id="setaEsquerda">&#10094;</button>
+
+      <div class="carrossel-inner" id="carrosselInner">
+        <img src="IMG/1.jpg" alt="Imagem 1">
+        <img src="IMG/2.jpg" alt="Imagem 2">
+        <img src="IMG/3.jpg" alt="Imagem 3">
+        <img src="IMG/1.jpg" alt="Imagem 1 repetida">
+        <img src="IMG/2.jpg" alt="Imagem 2 repetida">
+        <img src="IMG/3.jpg" alt="Imagem 3 repetida">
+      </div>
+
+      <button class="seta seta-direita" id="setaDireita">&#10095;</button>
+    </section>
+
+
+    <section class="content">
+      <p><a href="https://pt.wikipedia.org/wiki/Meredith_Grey" class="link-centralizado" target="_blank" rel="noopener noreferrer">Meu perfil</a></p>
+      <section class="info-table">
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Informações Pessoais</th>
+              <th>Informações Acadêmicas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Nome Completo:</th>
+              <th>Curso:</th>
+            </tr>
+            <tr>
+              <td>Meredith Grey</td>
+              <td>Medicina Cirúrgica</td>
+            </tr>
+
+            <tr>
+              <th>Idade:</th>
+              <th>Período:</th>
+            </tr>
+            <tr>
+              <td>47 anos</td>
+              <td>Formada</td>
+            </tr>
+
+            <tr>
+              <th>Endereço:</th>
+              <th>Ucs já cursadas:</th>
+            </tr>
+            <tr>
+              <td>Seattle, Washington, Estados Unidos</td>
+              <td id="listaUCs-container">
+                <div id="listaUCs">
+                  <div class="uc-item">Anatomia
+                    <button class="up" onclick="moveUp(this)">&#8593;</button>
+                    <button class="down" onclick="moveDown(this)">&#8595;</button>
+                  </div>
+                  <div class="uc-item">Fisiologia
+                    <button class="up" onclick="moveUp(this)">&#8593;</button>
+                    <button class="down" onclick="moveDown(this)">&#8595;</button>
+                  </div>
+                  <div class="uc-item">Bioquímica
+                    <button class="up" onclick="moveUp(this)">&#8593;</button>
+                    <button class="down" onclick="moveDown(this)">&#8595;</button>
+                  </div>
+                  <div class="uc-item">Semiologia
+                    <button class="up" onclick="moveUp(this)">&#8593;</button>
+                    <button class="down" onclick="moveDown(this)">&#8595;</button>
+                  </div>
+                  <div class="uc-item">Patologia
+                    <button class="up" onclick="moveUp(this)">&#8593;</button>
+                    <button class="down" onclick="moveDown(this)">&#8595;</button>
+                  </div>
+                </div>
+                <button onclick="btnAdicionarUC()">Adicionar UC</button>
+              </td>
+            </tr>
+            <tr>
+              <th>Sobre mim:</th>
+              <th>Perfil profissional:</th>
+            </tr>
+            <tr>
+              <td id="sobreMim">
+                Sou a Meredith Grey, cirurgiã no Grey Sloan Memorial Hospital. Cresci sob a sombra da minha mãe, Ellis
+                Grey, uma renomada médica, o que me moldou para a medicina. Minha carreira tem sido cheia de desafios,
+                tanto
+                na sala de cirurgia quanto na vida pessoal, mas aprendi a encontrar equilíbrio entre as duas. Sou uma
+                profissional dedicada, mas também aprendi a valorizar as conexões humanas que fazem toda a diferença,
+                mesmo
+                nas situações mais difíceis.
+
+                <div style="margin-top: 15px;">
+                  <textarea id="novaDescricao" rows="4" style="width: 100%;"
+                    placeholder="Adicione mais informações sobre você..."></textarea>
+                  <button id="btnAddDescricao" style="margin-top: 5px;">Adicionar descrição</button>
+                </div>
+              </td>
+              <td>Comecei como interna no Seattle Grace Hospital, sem saber exatamente onde me encaixaria. Me tornei
+                residente, e ao longo dos anos, conquistei meu espaço, passando por momentos de grande aprendizado e até
+                tragédias. Hoje, sou cirurgiã e uma das líderes do hospital.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="forms">
+        <form id="meuForm" novalidate>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="email@exemplo.com" required />
+          <small id="email-error">E-mail inválido.</small>
+
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required />
+          <small id="cpf-error">CPF inválido. Use o formato 000.000.000-00</small>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="validacaoForm.js"></script>
+</body>
+
+</html>
