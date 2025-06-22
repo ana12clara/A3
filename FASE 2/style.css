@@ -1,0 +1,132 @@
+h1 {
+    text-align: center;
+    background-color: rgb(101, 167, 189);
+    color: white;
+    border: 20px;
+    padding: 15px;
+}
+
+.carrossel {
+  max-width: 90vw;
+  width: 600px;
+  height: 400px;
+  margin: 0 auto 50px; 
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #000;
+}
+
+.carrossel-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease-in-out;
+}
+
+.carrossel-inner img {
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  flex-shrink: 0;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0.4;
+  filter: blur(3px);
+  transform: scale(0.92);
+  user-select: none;
+  pointer-events: none;
+}
+
+.carrossel-inner img.active {
+  opacity: 1;
+  filter: none;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+/* Botões de navegação */
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.45);
+  color: white;
+  border: none;
+  font-size: 32px;
+  padding: 12px 18px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.seta:hover,
+.seta:focus {
+  background-color: rgba(0, 0, 0, 0.75);
+  transform: translateY(-50%) scale(1.1);
+  outline: none;
+}
+
+.seta-esquerda {
+  left: 15px;
+}
+
+.seta-direita {
+  right: 15px;
+}
+
+.link-centralizado{
+    display: block;
+    text-align: center;
+    
+}
+
+body {
+    font-family:Arial, sans-serif;
+    background-color: #f5f7fa;
+    padding: 40px;
+  }
+
+  table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  thead tr th{
+    font-family:Tahoma;
+    text-align: center;
+    background-color: rgb(101, 167, 189);
+    color: white;
+  }
+
+  th, td {
+    font-family:Tahoma;
+    padding: 16px;
+    text-align: left;
+    border: 1px solid #ddd;
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+
+  tbody tr th {
+    background-color: #b4bbf8;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    
+    font-size: 20px;
+  }
+
+  tbody tr:hover td {
+    background-color: #f0f0f0;
+  }
