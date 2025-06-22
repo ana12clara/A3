@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalho Quarta</title>
-    <link href="style.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho Quarta</title>
+  <link href="style.css" rel="stylesheet" />
 </head>
+
 <body>
-    <h1>Perfil</h1>
-    <img src="IMG/3.jpg">
-    <p><a href="https://pt.wikipedia.org/wiki/Meredith_Grey" class="link-centralizado">Meu perfil</a></p>
-    <table border="1">
-        <thead>
-          <tr>
-            <th>Informações Pessoais</th>
-            <th>Informações Acadêmicas</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>Nome Completo:</th>
-            <th>Curso:</th>
-          </tr>
-          <tr>
-            <td>Meredith Grey</td>
-            <td>Medicina Cirúrgica</td>
-          </tr>
-      
-          <tr>
-            <th>Idade:</th>
-            <th>Período:</th>
-          </tr>
-          <tr>
-            <td>47 anos</td>
-            <td>Formada</td>
-          </tr>
-      
-          <tr>
-            <th>Endereço:</th>
-            <th>Ucs já cursadas:</th>
-          </tr>
-          <tr>
-            <td>Seattle, Washington, Estados Unidos</td>
-            <td>Anatomia, fisiologia, bioquímica, semiologia e patologia</td>
-          </tr>
-      
-          <tr>
-            <th>Sobre mim:</th>
-            <th>Perfil profissional:</th>
-          </tr>
-          <tr>
-            <td>Sou a Meredith Grey, cirurgiã no Grey Sloan Memorial Hospital. Cresci sob a sombra da minha mãe, Ellis Grey, uma renomada médica, o que me moldou para a medicina. Minha carreira tem sido cheia de desafios, tanto na sala de cirurgia quanto na vida pessoal, mas aprendi a encontrar equilíbrio entre as duas. Sou uma profissional dedicada, mas também aprendi a valorizar as conexões humanas que fazem toda a diferença, mesmo nas situações mais difíceis.</td>
-            <td>Comecei como interna no Seattle Grace Hospital, sem saber exatamente onde me encaixaria. Me tornei residente, e ao longo dos anos, conquistei meu espaço, passando por momentos de grande aprendizado e até tragédias. Hoje, sou cirurgiã e uma das líderes do hospital.</td>
-          </tr>
-        </tbody>
-      </table>
-      
-      
+  <h1>Perfil</h1>
+  <section class="carrossel">
+    <button class="seta seta-esquerda" id="setaEsquerda">&#10094;</button>
+
+    <div class="carrossel-inner" id="carrosselInner">
+      <img src="IMG/1.jpg" alt="Imagem 1">
+      <img src="IMG/2.jpg" alt="Imagem 2">
+      <img src="IMG/3.jpg" alt="Imagem 3">
+      <img src="IMG/1.jpg" alt="Imagem 1 repetida">
+      <img src="IMG/2.jpg" alt="Imagem 2 repetida">
+      <img src="IMG/3.jpg" alt="Imagem 3 repetida">
+    </div>
+
+    <button class="seta seta-direita" id="setaDireita">&#10095;</button>
+  </section>
+  <p><a href="https://pt.wikipedia.org/wiki/Meredith_Grey" class="link-centralizado">Meu perfil</a></p>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Informações Pessoais</th>
+        <th>Informações Acadêmicas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Nome Completo:</th>
+        <th>Curso:</th>
+      </tr>
+      <tr>
+        <td>Meredith Grey</td>
+        <td>Medicina Cirúrgica</td>
+      </tr>
+
+      <tr>
+        <th>Idade:</th>
+        <th>Período:</th>
+      </tr>
+      <tr>
+        <td>47 anos</td>
+        <td>Formada</td>
+      </tr>
+
+      <tr>
+        <th>Endereço:</th>
+        <th>Ucs já cursadas:</th>
+      </tr>
+      <tr>
+        <td>Seattle, Washington, Estados Unidos</td>
+        <td>Anatomia, fisiologia, bioquímica, semiologia e patologia</td>
+      </tr>
+
+      <tr>
+        <th>Sobre mim:</th>
+        <th>Perfil profissional:</th>
+      </tr>
+      <tr>
+        <td>Sou a Meredith Grey, cirurgiã no Grey Sloan Memorial Hospital. Cresci sob a sombra da minha mãe, Ellis Grey,
+          uma renomada médica, o que me moldou para a medicina. Minha carreira tem sido cheia de desafios, tanto na sala
+          de cirurgia quanto na vida pessoal, mas aprendi a encontrar equilíbrio entre as duas. Sou uma profissional
+          dedicada, mas também aprendi a valorizar as conexões humanas que fazem toda a diferença, mesmo nas situações
+          mais difíceis.</td>
+        <td>Comecei como interna no Seattle Grace Hospital, sem saber exatamente onde me encaixaria. Me tornei
+          residente, e ao longo dos anos, conquistei meu espaço, passando por momentos de grande aprendizado e até
+          tragédias. Hoje, sou cirurgiã e uma das líderes do hospital.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
